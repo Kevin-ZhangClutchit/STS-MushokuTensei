@@ -1,0 +1,7 @@
+{
+  "TrialMod:Strike": {
+    "NAME": "你好打击",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 造成 !D! 点伤害。"
+  }
+}
