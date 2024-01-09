@@ -23,14 +23,14 @@ import trialMod.relics.MyRelic;
 
 import java.util.ArrayList;
 
-import static trialMod.Characters.MyCharacter.Enums.EXAMPLE_CARD;
-import static trialMod.Characters.MyCharacter.Enums.MY_CHARACTER;
+import static trialMod.Characters.Roxy.Enums.ROXY_CARD;
+import static trialMod.Characters.Roxy.Enums.ROXY_CHARACTER;
 
-public class MyCharacter extends CustomPlayer {
+public class Roxy extends CustomPlayer {
     // 火堆的人物立绘（行动前）
-    private static final String MY_CHARACTER_SHOULDER_1 = "trialModResources/img/char/shoulder1.png";
+    private static final String ROXY_CHARACTER_SHOULDER_1 = "trialModResources/img/char/shoulder1.png";
     // 火堆的人物立绘（行动后）
-    private static final String MY_CHARACTER_SHOULDER_2 = "trialModResources/img/char/shoulder2.png";
+    private static final String ROXY_CHARACTER_SHOULDER_2 = "trialModResources/img/char/shoulder2.png";
     // 人物死亡图像
     private static final String CORPSE_IMAGE = "trialModResources/img/char/corpse.png";
     // 战斗界面左下角能量图标的每个图层
@@ -50,10 +50,10 @@ public class MyCharacter extends CustomPlayer {
     // 每个图层的旋转速度
     private static final float[] LAYER_SPEED = new float[]{-40.0F, -32.0F, 20.0F, -20.0F, 0.0F, -10.0F, -8.0F, 5.0F, -5.0F, 0.0F};
     // 人物的本地化文本，如卡牌的本地化文本一样，如何书写见下
-    private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString("trialMod:MyCharacter");
+    private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString("trialMod:Roxy");
 
-    public MyCharacter(String name) {
-        super(name, MY_CHARACTER,ORB_TEXTURES,"trialModResources/img/UI/orb/vfx.png", LAYER_SPEED, null, null);
+    public Roxy(String name) {
+        super(name, ROXY_CHARACTER,ORB_TEXTURES,"trialModResources/img/UI/orb/vfx.png", LAYER_SPEED, null, null);
 
 
         // 人物对话气泡的大小，如果游戏中尺寸不对在这里修改（libgdx的坐标轴左下为原点）
@@ -64,7 +64,7 @@ public class MyCharacter extends CustomPlayer {
         // 初始化你的人物，如果你的人物只有一张图，那么第一个参数填写你人物图片的路径。
         this.initializeClass(
                 "trialModResources/img/char/character.png", // 人物图片
-                MY_CHARACTER_SHOULDER_2, MY_CHARACTER_SHOULDER_1,
+                ROXY_CHARACTER_SHOULDER_2, ROXY_CHARACTER_SHOULDER_1,
                 CORPSE_IMAGE, // 人物死亡图像
                 this.getLoadout(),
                 0.0F, 0.0F,
@@ -126,7 +126,7 @@ public class MyCharacter extends CustomPlayer {
     // 你的卡牌颜色（这个枚举在最下方创建）
     @Override
     public AbstractCard.CardColor getCardColor() {
-        return EXAMPLE_CARD;
+        return ROXY_CARD;
     }
 
     // 翻牌事件出现的你的职业牌（一般设为打击）
@@ -185,7 +185,7 @@ public class MyCharacter extends CustomPlayer {
     // 创建人物实例，照抄
     @Override
     public AbstractPlayer newInstance() {
-        return new MyCharacter(this.name);
+        return new Roxy(this.name);
     }
 
     // 第三章面对心脏说的话（例如战士是“你握紧了你的长刀……”之类的）
@@ -222,12 +222,12 @@ public class MyCharacter extends CustomPlayer {
     // ***填在SpireEnum中的name需要一致***
     public static class Enums {
         @SpireEnum
-        public static PlayerClass MY_CHARACTER;
+        public static PlayerClass ROXY_CHARACTER;
 
-        @SpireEnum(name = "EXAMPLE_GREEN")
-        public static AbstractCard.CardColor EXAMPLE_CARD;
+        @SpireEnum(name = "CARD_ROXY_BLUE")
+        public static AbstractCard.CardColor ROXY_CARD;
 
-        @SpireEnum(name = "EXAMPLE_GREEN")
-        public static CardLibrary.LibraryType EXAMPLE_LIBRARY;
+        @SpireEnum(name = "CARD_ROXY_BLUE")
+        public static CardLibrary.LibraryType ROXY_LIBRARY;
     }
 }

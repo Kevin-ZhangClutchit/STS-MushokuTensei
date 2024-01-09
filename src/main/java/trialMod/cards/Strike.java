@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import basemod.abstracts.CustomCard;
+import trialMod.Characters.Roxy;
 
 public class Strike extends CustomCard {
     public static final String ID = "TrialMod:Strike";
@@ -18,7 +19,7 @@ public class Strike extends CustomCard {
     private static final int COST = 3;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.ATTACK;
-    private static final CardColor COLOR = CardColor.COLORLESS;
+    private static final CardColor COLOR = Roxy.Enums.ROXY_CARD;
     private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
