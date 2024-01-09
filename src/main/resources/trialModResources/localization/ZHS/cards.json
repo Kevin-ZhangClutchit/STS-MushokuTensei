@@ -3,5 +3,13 @@
     "NAME": "你好打击",
     "DESCRIPTION": "造成 !D! 点伤害。",
     "UPGRADE_DESCRIPTION": " 固有 。 NL 造成 !D! 点伤害。"
+  },
+  "TrialMod:MagicStrike": {
+    "NAME": "魔法冲击",
+    "DESCRIPTION": "洛琪希的基础攻击魔法，造成 !D! 点魔法伤害。"
+  },
+  "TrialMod:MagicDefend": {
+    "NAME": "魔法护盾",
+    "DESCRIPTION": "使用魔法加护自己，获得 !B! 点格挡。"
   }
 }

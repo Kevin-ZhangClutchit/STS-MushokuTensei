@@ -17,6 +17,8 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.relics.Vajra;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
+import trialMod.cards.MagicDefend;
+import trialMod.cards.MagicStrike;
 import trialMod.cards.Strike;
 import trialMod.modcore.MushokuTensei;
 import trialMod.relics.MyRelic;
@@ -63,7 +65,7 @@ public class Roxy extends CustomPlayer {
 
         // 初始化你的人物，如果你的人物只有一张图，那么第一个参数填写你人物图片的路径。
         this.initializeClass(
-                "trialModResources/img/char/character.png", // 人物图片
+                "trialModResources/img/char/roxy_default.png", // 人物图片
                 ROXY_CHARACTER_SHOULDER_2, ROXY_CHARACTER_SHOULDER_1,
                 CORPSE_IMAGE, // 人物死亡图像
                 this.getLoadout(),
@@ -85,12 +87,12 @@ public class Roxy extends CustomPlayer {
     // 初始卡组的ID，可直接写或引用变量
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        for(int x = 0; x<7; x++) {
-            retVal.add(Strike.ID);
+        for(int x = 0; x<5; x++) {
+            retVal.add(MagicStrike.ID);
         }
-       /* for(int x = 0; x<5; x++) {
-            retVal.add(Defend.ID);
-        }*/
+        for(int x = 0; x<5; x++) {
+            retVal.add(MagicDefend.ID);
+        }
         return retVal;
     }
 

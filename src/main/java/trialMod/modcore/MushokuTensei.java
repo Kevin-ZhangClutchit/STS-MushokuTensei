@@ -14,6 +14,8 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import trialMod.Characters.Roxy;
+import trialMod.cards.MagicDefend;
+import trialMod.cards.MagicStrike;
 import trialMod.cards.Strike;
 import com.badlogic.gdx.graphics.Color;
 import trialMod.relics.MyRelic;
@@ -24,8 +26,8 @@ import static trialMod.Characters.Roxy.Enums.ROXY_CHARACTER;
 @SpireInitializer
 public class MushokuTensei implements EditCardsSubscriber, EditStringsSubscriber, EditCharactersSubscriber,
         EditRelicsSubscriber {
-    private static final String MY_CHARACTER_BUTTON = "trialModResources/img/char/Character_Button.png";
-    private static final String MY_CHARACTER_PORTRAIT = "trialModResources/img/char/Roxy_Portrait.jpg";
+    private static final String ROXY_BUTTON = "trialModResources/img/char/Roxy_Character_Button.png";
+    private static final String ROXY_PORTRAIT = "trialModResources/img/char/Roxy_Portrait.jpg";
     private static final String ROXY_ATTACK_512 = "trialModResources/img/512/roxy_attack_512.png";
     private static final String ROXY_POWER_512 = "trialModResources/img/512/roxy_power_512.png";
     private static final String ROXY_SKILL_512 = "trialModResources/img/512/roxy_skill_512.png";
@@ -50,6 +52,8 @@ public class MushokuTensei implements EditCardsSubscriber, EditStringsSubscriber
     @Override
     public void receiveEditCards() {
         BaseMod.addCard(new Strike());
+        BaseMod.addCard(new MagicStrike());
+        BaseMod.addCard(new MagicDefend());
     }
 
 
@@ -67,7 +71,7 @@ public class MushokuTensei implements EditCardsSubscriber, EditStringsSubscriber
 
     @Override
     public void receiveEditCharacters() {
-        BaseMod.addCharacter(new Roxy(CardCrawlGame.playerName), MY_CHARACTER_BUTTON, MY_CHARACTER_PORTRAIT, ROXY_CHARACTER);
+        BaseMod.addCharacter(new Roxy(CardCrawlGame.playerName), ROXY_BUTTON, ROXY_PORTRAIT, ROXY_CHARACTER);
     }
 
     @Override
