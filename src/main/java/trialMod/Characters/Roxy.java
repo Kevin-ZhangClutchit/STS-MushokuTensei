@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.relics.Vajra;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
+import trialMod.cards.ChantIce;
 import trialMod.cards.MagicDefend;
 import trialMod.cards.MagicStrike;
 import trialMod.cards.Strike;
@@ -93,6 +94,7 @@ public class Roxy extends CustomPlayer {
         for(int x = 0; x<5; x++) {
             retVal.add(MagicDefend.ID);
         }
+        retVal.add(ChantIce.ID);
         return retVal;
     }
 

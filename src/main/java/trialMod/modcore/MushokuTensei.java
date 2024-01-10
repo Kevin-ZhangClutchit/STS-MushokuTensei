@@ -12,8 +12,10 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import trialMod.Characters.Roxy;
+import trialMod.cards.ChantIce;
 import trialMod.cards.MagicDefend;
 import trialMod.cards.MagicStrike;
 import trialMod.cards.Strike;
@@ -54,6 +56,7 @@ public class MushokuTensei implements EditCardsSubscriber, EditStringsSubscriber
         BaseMod.addCard(new Strike());
         BaseMod.addCard(new MagicStrike());
         BaseMod.addCard(new MagicDefend());
+        BaseMod.addCard(new ChantIce());
     }
 
 
@@ -67,6 +70,7 @@ public class MushokuTensei implements EditCardsSubscriber, EditStringsSubscriber
         BaseMod.loadCustomStringsFile(CardStrings.class, "trialModResources/localization/" + lang + "/cards.json"); // 加载相应语言的卡牌本地化内容。
         BaseMod.loadCustomStringsFile(CharacterStrings.class, "trialModResources/localization/" + lang + "/characters.json");
         BaseMod.loadCustomStringsFile(RelicStrings.class, "trialModResources/localization/" + lang + "/relics.json");
+        BaseMod.loadCustomStringsFile(PowerStrings.class, "trialModResources/localization/" + lang + "/powers.json");
     }
 
     @Override

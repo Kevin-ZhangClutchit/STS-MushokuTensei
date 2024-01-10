@@ -12,4 +12,9 @@
     "NAME": "魔法护盾",
     "DESCRIPTION": "使用魔法加护自己，获得 !B! 点格挡。"
   }
+  ,
+  "TrialMod:ChantIce": {
+    "NAME": "吟唱-寒冰",
+    "DESCRIPTION": "吟唱寒冰魔法音节，获得 !B! 点格挡和 !M! 点寒冰音节。"
+  }
 }

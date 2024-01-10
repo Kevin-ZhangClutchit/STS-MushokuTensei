@@ -1,0 +1,8 @@
+{
+  "TrialMod:IceChant": {
+    "NAME": "寒冰音节",
+    "DESCRIPTIONS": [ 
+      " 你已经吟唱了 #b%d 节冰元素音节。"
+    ]
+  }
+}
