@@ -225,6 +225,8 @@ public class Roxy extends CustomPlayer {
         return new AbstractGameAction.AttackEffect[]{AbstractGameAction.AttackEffect.SLASH_HEAVY, AbstractGameAction.AttackEffect.FIRE, AbstractGameAction.AttackEffect.SLASH_DIAGONAL, AbstractGameAction.AttackEffect.SLASH_HEAVY, AbstractGameAction.AttackEffect.FIRE, AbstractGameAction.AttackEffect.SLASH_DIAGONAL};
     }
 
+    public boolean isReadyToChant=false;
+    public int chantCount=0;
     // 为原版人物枚举、卡牌颜色枚举扩展的枚举，需要写，接下来要用
     // ***填在SpireEnum中的name需要一致***
     public static class Enums {
