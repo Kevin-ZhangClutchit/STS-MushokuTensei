@@ -18,9 +18,9 @@ import trialMod.Characters.Roxy;
 import trialMod.cards.*;
 import com.badlogic.gdx.graphics.Color;
 import trialMod.relics.MyRelic;
+import trialMod.relics.RoxyWand;
 
-import static trialMod.Characters.Roxy.Enums.ROXY_CARD;
-import static trialMod.Characters.Roxy.Enums.ROXY_CHARACTER;
+import static trialMod.Characters.Roxy.Enums.*;
 
 @SpireInitializer
 public class MushokuTensei implements EditCardsSubscriber, EditStringsSubscriber, EditCharactersSubscriber,
@@ -79,6 +79,8 @@ public class MushokuTensei implements EditCardsSubscriber, EditStringsSubscriber
 
     @Override
     public void receiveEditRelics() {
-        BaseMod.addRelic(new MyRelic(), RelicType.SHARED);
+        //BaseMod.addRelic(new MyRelic(), RelicType.SHARED);
+        BaseMod.addRelic(new RoxyWand(), RelicType.SHARED);
+
     }
 }

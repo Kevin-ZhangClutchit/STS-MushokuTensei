@@ -1,5 +1,6 @@
 package trialMod.Characters;
 import basemod.abstracts.CustomPlayer;
+import basemod.helpers.RelicType;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
@@ -24,6 +25,7 @@ import trialMod.cards.MagicStrike;
 import trialMod.cards.Strike;
 import trialMod.modcore.MushokuTensei;
 import trialMod.relics.MyRelic;
+import trialMod.relics.RoxyWand;
 
 import java.util.ArrayList;
 
@@ -99,10 +101,10 @@ public class Roxy extends CustomPlayer {
         return retVal;
     }
 
-    // 初始遗物的ID，可以先写个原版遗物凑数
+    // 初始遗物
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(MyRelic.ID); // 这里
+        retVal.add(RoxyWand.ID);
         return retVal;
     }
 
@@ -234,5 +236,6 @@ public class Roxy extends CustomPlayer {
 
         @SpireEnum(name = "CARD_ROXY_BLUE")
         public static CardLibrary.LibraryType ROXY_LIBRARY;
+
     }
 }
