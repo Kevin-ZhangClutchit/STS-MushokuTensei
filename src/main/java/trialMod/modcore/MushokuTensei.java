@@ -15,10 +15,7 @@ import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import trialMod.Characters.Roxy;
-import trialMod.cards.ChantIce;
-import trialMod.cards.MagicDefend;
-import trialMod.cards.MagicStrike;
-import trialMod.cards.Strike;
+import trialMod.cards.*;
 import com.badlogic.gdx.graphics.Color;
 import trialMod.relics.MyRelic;
 
@@ -57,6 +54,8 @@ public class MushokuTensei implements EditCardsSubscriber, EditStringsSubscriber
         BaseMod.addCard(new MagicStrike());
         BaseMod.addCard(new MagicDefend());
         BaseMod.addCard(new ChantIce());
+        BaseMod.addCard(new ChantFire());
+        BaseMod.addCard(new ChantSand());
     }
 
 

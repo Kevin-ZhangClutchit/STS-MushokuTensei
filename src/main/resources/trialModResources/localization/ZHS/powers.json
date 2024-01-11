@@ -1,8 +1,20 @@
 {
   "TrialMod:IceChant": {
-    "NAME": "寒冰音节",
+    "NAME": "水",
     "DESCRIPTIONS": [ 
-      " 你已经吟唱了 #b%d 节冰元素音节。"
+      " 你已经吟唱了 #b%d 节水魔法音节。"
+    ]
+  },
+  "TrialMod:FireChant": {
+    "NAME": "火",
+    "DESCRIPTIONS": [ 
+      " 你已经吟唱了 #r%d 节火魔法音节。"
+    ]
+  },
+  "TrialMod:SandChant": {
+    "NAME": "土",
+    "DESCRIPTIONS": [ 
+      " 你已经吟唱了 #y%d 节土魔法音节。"
     ]
   }
 }

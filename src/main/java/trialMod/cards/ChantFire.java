@@ -2,17 +2,17 @@ package trialMod.cards;
 
 import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import trialMod.Characters.Roxy;
-import trialMod.powers.IceChant;
+import trialMod.powers.FireChant;
 
-public class ChantIce extends CustomCard{
-    public static final String ID = "TrialMod:ChantIce";
+public class ChantFire extends CustomCard{
+    public static final String ID = "TrialMod:ChantFire";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "trialModResources/img/cards/Strike.png";
@@ -23,9 +23,9 @@ public class ChantIce extends CustomCard{
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    public ChantIce() {
+    public ChantFire() {
         super (ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.block = this.baseBlock = 2;
+        this.block = this.baseBlock = 1;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
 
@@ -43,7 +43,8 @@ public class ChantIce extends CustomCard{
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new GainBlockAction(p, p, this.block));
-        this.addToBot(new ApplyPowerAction(p, p, new IceChant(p,this.magicNumber), this.magicNumber));
+        this.addToBot(new AddTemporaryHPAction(p, p, 1));
+        this.addToBot(new ApplyPowerAction(p, p, new FireChant(p,this.magicNumber), this.magicNumber));
     }
 
 }

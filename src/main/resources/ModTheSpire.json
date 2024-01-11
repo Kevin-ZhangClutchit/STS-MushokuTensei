@@ -6,7 +6,7 @@
   ],
   "description": "Yaho.",
   "dependencies": [
-    "basemod"
+    "basemod", "stslib"
   ],
   "version": "0.0.1",
   "sts_version": "12-18-2022"

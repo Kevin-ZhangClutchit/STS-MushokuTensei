@@ -14,7 +14,17 @@
   }
   ,
   "TrialMod:ChantIce": {
-    "NAME": "吟唱-寒冰",
-    "DESCRIPTION": "吟唱寒冰魔法音节，获得 !B! 点格挡和 !M! 点寒冰音节。"
+    "NAME": "吟唱-水",
+    "DESCRIPTION": "吟唱水魔法，获得 !B! 点格挡和 !M! 点水魔法音节。"
+  }
+  ,
+  "TrialMod:ChantFire": {
+    "NAME": "吟唱-火",
+    "DESCRIPTION": "吟唱火魔法，获得 !B! 点格挡和 1 点临时生命，除此之外获得 !M! 点火魔法音节。"
+  }
+  ,
+  "TrialMod:ChantSand": {
+    "NAME": "吟唱-土",
+    "DESCRIPTION": "吟唱土魔法，获得 2 点临时生命和 !M! 点土魔法音节。"
   }
 }
