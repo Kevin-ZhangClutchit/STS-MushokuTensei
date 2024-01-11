@@ -27,4 +27,9 @@
     "NAME": "吟唱-土",
     "DESCRIPTION": "吟唱土魔法，获得 2 点临时生命和 !M! 点土魔法音节。"
   }
+  ,
+  "TrialMod:WaterFall": {
+    "NAME": "水球",
+    "DESCRIPTION": "锐意设计中"
+  }
 }
