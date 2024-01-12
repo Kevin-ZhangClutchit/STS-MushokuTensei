@@ -32,6 +32,7 @@ public class IceChant extends AbstractPower {
         // 如果需要不能叠加的能力，只需将上面的Amount参数删掉，并把下面的Amount改成-1就行
         this.amount = Amount;
         if (this.owner instanceof Roxy){
+            ((Roxy)owner).iceCount = Amount;
             System.out.println(String.format("current count in init:%d",((Roxy)owner).chantCount));
             ((Roxy)owner).chantCount+= Amount;
             System.out.println(String.format("current count in init after update:%d",((Roxy)owner).chantCount));
@@ -73,6 +74,7 @@ public class IceChant extends AbstractPower {
                 ((Roxy)owner).isReadyToChant= ((Roxy) owner).chantCount >= 3;
             }
         }
+        // todo or not:在为0的时候删去该能力
 
 
     }

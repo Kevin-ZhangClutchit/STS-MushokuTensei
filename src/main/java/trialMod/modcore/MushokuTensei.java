@@ -1,13 +1,10 @@
 package trialMod.modcore;
 
 import basemod.helpers.RelicType;
-import basemod.interfaces.EditCharactersSubscriber;
-import basemod.interfaces.EditRelicsSubscriber;
-import basemod.interfaces.EditStringsSubscriber;
+import basemod.interfaces.*;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 
 import basemod.BaseMod;
-import basemod.interfaces.EditCardsSubscriber;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -24,7 +21,7 @@ import static trialMod.Characters.Roxy.Enums.*;
 
 @SpireInitializer
 public class MushokuTensei implements EditCardsSubscriber, EditStringsSubscriber, EditCharactersSubscriber,
-        EditRelicsSubscriber {
+        EditRelicsSubscriber, EditKeywordsSubscriber {
     private static final String ROXY_BUTTON = "trialModResources/img/char/Roxy_Character_Button.png";
     private static final String ROXY_PORTRAIT = "trialModResources/img/char/Roxy_Portrait.jpg";
     private static final String ROXY_ATTACK_512 = "trialModResources/img/512/roxy_attack_512.png";
@@ -56,6 +53,8 @@ public class MushokuTensei implements EditCardsSubscriber, EditStringsSubscriber
         BaseMod.addCard(new ChantIce());
         BaseMod.addCard(new ChantFire());
         BaseMod.addCard(new ChantSand());
+        BaseMod.addCard(new WaterBall());
+        BaseMod.addCard(new WaterShield());
     }
 
 
@@ -82,5 +81,15 @@ public class MushokuTensei implements EditCardsSubscriber, EditStringsSubscriber
         //BaseMod.addRelic(new MyRelic(), RelicType.SHARED);
         BaseMod.addRelic(new RoxyWand(), RelicType.SHARED);
 
+    }
+
+    @Override
+    public void receiveEditKeywords() {
+        BaseMod.addKeyword("trialmod", "初级", new String[] {"初级"}, "最基础的入门魔法，即使是剑士也可以习得 #y初级 魔法。");
+        BaseMod.addKeyword("trialmod", "中级", new String[] {"中级"}, " #y中级 魔法。");
+        BaseMod.addKeyword("trialmod", "上级", new String[] {"上级"}, " #y上级 魔法。");
+        BaseMod.addKeyword("trialmod", "圣级", new String[] {"圣级"}, " #y圣级 魔法。");
+        BaseMod.addKeyword("trialmod", "王级", new String[] {"王级"}, " #y王级 魔法。");
+        BaseMod.addKeyword("trialmod", "帝级", new String[] {"帝级"}, " #y帝级 魔法。");
     }
 }

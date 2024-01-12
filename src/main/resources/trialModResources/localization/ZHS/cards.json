@@ -28,8 +28,15 @@
     "DESCRIPTION": "吟唱土魔法，获得 2 点临时生命和 !M! 点土魔法音节。"
   }
   ,
-  "TrialMod:WaterFall": {
+  "TrialMod:WaterBall": {
     "NAME": "水球",
-    "DESCRIPTION": "锐意设计中"
+    "DESCRIPTION": " trialmod:初级 , NL 使用 !M! 点水魔法，造成 !D! 点水属性伤害。",
+    "EXTENDED_DESCRIPTION": ["你尚未吟唱对应的魔法音节！"]
+  }
+  ,
+  "TrialMod:WaterShield": {
+    "NAME": "水盾",
+    "DESCRIPTION": " trialmod:初级 ,保留。 NL 使用1点水魔法，获得 !B! 点格挡。这张牌每被打出一次，本场战斗中其格挡增加 !M! 点。",
+    "EXTENDED_DESCRIPTION": ["你尚未吟唱对应的魔法音节！"]
   }
 }

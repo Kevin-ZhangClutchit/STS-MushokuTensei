@@ -19,10 +19,7 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.relics.Vajra;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
-import trialMod.cards.ChantIce;
-import trialMod.cards.MagicDefend;
-import trialMod.cards.MagicStrike;
-import trialMod.cards.Strike;
+import trialMod.cards.*;
 import trialMod.modcore.MushokuTensei;
 import trialMod.relics.MyRelic;
 import trialMod.relics.RoxyWand;
@@ -91,11 +88,11 @@ public class Roxy extends CustomPlayer {
     // 初始卡组的ID，可直接写或引用变量
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        for(int x = 0; x<5; x++) {
+        for(int x = 0; x<3; x++) {
             retVal.add(MagicStrike.ID);
         }
-        for(int x = 0; x<5; x++) {
-            retVal.add(MagicDefend.ID);
+        for(int x = 0; x<1; x++) {
+            retVal.add(WaterShield.ID);
         }
         retVal.add(ChantIce.ID);
         return retVal;
@@ -227,6 +224,9 @@ public class Roxy extends CustomPlayer {
 
     public boolean isReadyToChant=false;
     public int chantCount=0;
+    public int iceCount=0;
+    public int fireCount=0;
+    public int sandCount=0;
     // 为原版人物枚举、卡牌颜色枚举扩展的枚举，需要写，接下来要用
     // ***填在SpireEnum中的name需要一致***
     public static class Enums {

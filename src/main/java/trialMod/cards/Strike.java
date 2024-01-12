@@ -43,4 +43,5 @@ public class Strike extends CustomCard {
         this.addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL)));
     }
 
+
 }

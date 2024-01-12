@@ -26,7 +26,9 @@ public class FireChant extends AbstractPower {
 
         // 如果需要不能叠加的能力，只需将上面的Amount参数删掉，并把下面的Amount改成-1就行
         this.amount = Amount;
+
         if (this.owner instanceof Roxy){
+            ((Roxy)owner).fireCount = Amount;
             ((Roxy)owner).chantCount += Amount;
             ((Roxy)owner).isReadyToChant= ((Roxy) owner).chantCount >= 3;
         }
