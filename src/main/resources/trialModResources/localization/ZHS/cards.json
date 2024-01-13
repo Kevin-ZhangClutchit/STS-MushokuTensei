@@ -45,4 +45,23 @@
     "DESCRIPTION": " trialmod:中级 。 NL 使用2点水魔法，造成 !D! 点水属性伤害。 斩杀时，获得 !M! 层 trialmod:魔力增幅 。",
     "EXTENDED_DESCRIPTION": ["你尚未吟唱对应的魔法音节！"]
   }
+  ,
+  "TrialMod:WaterCannon": {
+    "NAME": "水炮",
+    "DESCRIPTION": " trialmod:中级 。 NL 使用2点水魔法，选择: 获得 *水炮- *聚 或 *水炮- *散 。",
+    "UPGRADE_DESCRIPTION": "trialmod:中级 。 NL 使用2点水魔法，选择: 获得 *水炮-聚+ 或 *水炮-散+ 。",
+    "EXTENDED_DESCRIPTION": ["你尚未吟唱对应的魔法音节！"]
+  }
+  ,
+  "TrialMod:WaterCannonSingle": {
+    "NAME": "水炮-聚",
+    "DESCRIPTION": " trialmod:中级 , 虚无 。 NL 造成 !D! 点水属性伤害。",
+    "EXTENDED_DESCRIPTION": ["你尚未吟唱对应的魔法音节！"]
+  }
+  ,
+  "TrialMod:WaterCannonSeparate": {
+    "NAME": "水炮-散",
+    "DESCRIPTION": " trialmod:中级 , 虚无 。 NL 造成 !D! 点水属性伤害 !M!次。",
+    "EXTENDED_DESCRIPTION": ["你尚未吟唱对应的魔法音节！"]
+  }
 }

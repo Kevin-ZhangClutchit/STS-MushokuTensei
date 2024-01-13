@@ -67,6 +67,9 @@ public class MushokuTensei implements EditCardsSubscriber, EditStringsSubscriber
         BaseMod.addCard(new WaterBall());
         BaseMod.addCard(new WaterShield());
         BaseMod.addCard(new IceSmash());
+        BaseMod.addCard(new WaterCannon());
+        BaseMod.addCard(new WaterCannonSingle());
+        BaseMod.addCard(new WaterCannonSeparate());
     }
 
 
