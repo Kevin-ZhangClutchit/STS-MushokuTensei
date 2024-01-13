@@ -28,7 +28,7 @@ public class FireChant extends AbstractPower {
         this.amount = Amount;
 
         if (this.owner instanceof Roxy){
-            ((Roxy)owner).fireCount = Amount;
+            ((Roxy)owner).fireCount += Amount;
             ((Roxy)owner).chantCount += Amount;
             ((Roxy)owner).isReadyToChant= ((Roxy) owner).chantCount >= 3;
         }

@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import trialMod.Characters.Roxy;
+import trialMod.modcore.MushokuTensei;
 import trialMod.powers.IceChant;
 
 public class WaterShield extends CustomCard{
@@ -28,6 +29,7 @@ public class WaterShield extends CustomCard{
     private static final int chantCost = 1;
     public WaterShield() {
         super (ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.tags.add(MushokuTensei.MAGIC);
         this.block = this.baseBlock = 2;
         this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;

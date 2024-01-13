@@ -2,9 +2,11 @@ package trialMod.modcore;
 
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
+import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 
 import basemod.BaseMod;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -35,6 +37,15 @@ public class MushokuTensei implements EditCardsSubscriber, EditStringsSubscriber
     private static final String ENEYGY_ORB = "trialModResources/img/char/cost_orb.png";
     public static final Color ROXY_BLUE
             = new Color(109.0F / 255.0F, 122.0F / 255.0F, 181.0F / 255.0F, 1.0F);
+
+
+    // new card tag
+    @SpireEnum
+    public static AbstractCard.CardTags MAGIC; //all magic cards
+    @SpireEnum
+    public static AbstractCard.CardTags MAGIC_ATTACK;
+
+
     public MushokuTensei() {
         BaseMod.subscribe(this);
         BaseMod.addColor(ROXY_CARD, ROXY_BLUE, ROXY_BLUE, ROXY_BLUE, ROXY_BLUE, ROXY_BLUE, ROXY_BLUE, ROXY_BLUE,ROXY_ATTACK_512,ROXY_SKILL_512,ROXY_POWER_512,ENEYGY_ORB,ROXY_ATTACK_1024,ROXY_SKILL_1024,ROXY_POWER_1024,BIG_ORB,SMALL_ORB);
@@ -55,6 +66,7 @@ public class MushokuTensei implements EditCardsSubscriber, EditStringsSubscriber
         BaseMod.addCard(new ChantSand());
         BaseMod.addCard(new WaterBall());
         BaseMod.addCard(new WaterShield());
+        BaseMod.addCard(new IceSmash());
     }
 
 
@@ -91,5 +103,7 @@ public class MushokuTensei implements EditCardsSubscriber, EditStringsSubscriber
         BaseMod.addKeyword("trialmod", "圣级", new String[] {"圣级"}, " #y圣级 魔法。");
         BaseMod.addKeyword("trialmod", "王级", new String[] {"王级"}, " #y王级 魔法。");
         BaseMod.addKeyword("trialmod", "帝级", new String[] {"帝级"}, " #y帝级 魔法。");
+        BaseMod.addKeyword("trialmod", "吟唱", new String[] {"吟唱"}, "在鲁迪乌斯推广无吟唱魔法前， #y吟唱 被认为是魔法的必要步骤。");
+        BaseMod.addKeyword("trialmod", "魔力增幅", new String[] {"魔力增幅"}, " #y魔力增幅 会提升你魔法攻击的伤害。");
     }
 }

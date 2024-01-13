@@ -16,5 +16,11 @@
     "DESCRIPTIONS": [ 
       " 你已经吟唱了 #y%d 节土魔法音节。"
     ]
+  },
+  "TrialMod:MagicAmplify": {
+    "NAME": "魔力增幅",
+    "DESCRIPTIONS": [ 
+      " 魔法攻击的伤害提升 #y%d 点。"
+    ]
   }
 }

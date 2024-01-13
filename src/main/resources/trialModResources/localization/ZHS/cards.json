@@ -15,17 +15,17 @@
   ,
   "TrialMod:ChantIce": {
     "NAME": "吟唱-水",
-    "DESCRIPTION": "吟唱水魔法，获得 !B! 点格挡和 !M! 点水魔法音节。"
+    "DESCRIPTION": " trialmod:吟唱 水魔法，获得 !B! 点格挡和 !M! 点水魔法音节。"
   }
   ,
   "TrialMod:ChantFire": {
     "NAME": "吟唱-火",
-    "DESCRIPTION": "吟唱火魔法，获得 !B! 点格挡和 1 点临时生命，除此之外获得 !M! 点火魔法音节。"
+    "DESCRIPTION": " trialmod:吟唱 火魔法，获得 !B! 点格挡和 1 点临时生命，除此之外获得 !M! 点火魔法音节。"
   }
   ,
   "TrialMod:ChantSand": {
     "NAME": "吟唱-土",
-    "DESCRIPTION": "吟唱土魔法，获得 2 点临时生命和 !M! 点土魔法音节。"
+    "DESCRIPTION": " trialmod:吟唱 土魔法，获得 2 点临时生命和 !M! 点土魔法音节。"
   }
   ,
   "TrialMod:WaterBall": {
@@ -36,7 +36,13 @@
   ,
   "TrialMod:WaterShield": {
     "NAME": "水盾",
-    "DESCRIPTION": " trialmod:初级 ,保留。 NL 使用1点水魔法，获得 !B! 点格挡。这张牌每被打出一次，本场战斗中其格挡增加 !M! 点。",
+    "DESCRIPTION": " trialmod:初级 , 保留 。 NL 使用1点水魔法，获得 !B! 点格挡。这张牌每被打出一次，本场战斗中其格挡增加 !M! 点。",
+    "EXTENDED_DESCRIPTION": ["你尚未吟唱对应的魔法音节！"]
+  }
+  ,
+  "TrialMod:IceSmash": {
+    "NAME": "冰击",
+    "DESCRIPTION": " trialmod:中级 。 NL 使用2点水魔法，造成 !D! 点水属性伤害。 斩杀时，获得 !M! 层 trialmod:魔力增幅 。",
     "EXTENDED_DESCRIPTION": ["你尚未吟唱对应的魔法音节！"]
   }
 }
